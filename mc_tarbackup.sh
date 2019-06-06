@@ -1,7 +1,6 @@
 #!/bin/bash
 
 #!/bin/bash
-#name=$(date +%m%d%H%M)
 
 PATH_MC="/home/steven/minecraft-server"
 
@@ -21,6 +20,3 @@ name=$(date +%m%d%H%M)
 tar -cvpzf /home/steven/vault/minecraftworld_$name.tar.gz /home/steven/minecraft-server-1-14-2_fabric/world
 # Turn world saving back on
 tmux send -t "minecraft" "save-on" C-m
-#cp -rf /home/steven/minecraft-server-1-14-2_fabric/world/ /home/steven/minecraft-server-1-14-2_fabric/backup/
-
-

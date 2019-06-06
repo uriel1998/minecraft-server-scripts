@@ -1,5 +1,4 @@
 #!/bin/bash
-#name=$(date +%m%d%H%M)
 
 PATH_MC="/home/steven/minecraft-server"
 
@@ -26,4 +25,3 @@ else
 fi
 # Turn world saving back on
 tmux send -t "minecraft" "save-on" C-m
-#cp -rf /home/steven/minecraft-server-1-14-2_fabric/world/ /home/steven/minecraft-server-1-14-2_fabric/backup/
