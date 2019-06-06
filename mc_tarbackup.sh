@@ -17,6 +17,5 @@ while true; do
 done
 # Create persistent copy from RAM to disk
 name=$(date +%m%d%H%M)
-tar -cvpzf /home/steven/vault/minecraftworld_$name.tar.gz /home/steven/minecraft-server-1-14-2_fabric/world
-# Turn world saving back on
+tar -cvpzf /home/steven/vault/minecraftworld_$name.tar.gz /home/steven/minecraft-server
 tmux send -t "minecraft" "save-on" C-m

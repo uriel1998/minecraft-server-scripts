@@ -15,7 +15,7 @@ while true; do
 done
 # Create persistent copy from RAM to disk
 mv "$PATH_MC.persistent" "$PATH_MC.persistent.bak" 2>/dev/null
-cp -ar "$PATH_MC" "$PATH_MC.persistent"
+rsync -avzh /home/steven/minecraft-server /home/steven/minecraft-server.persistent/
 if [ $? -ne 0 ]; then
     echo "Something went wrong while backing up."
     echo "An older copy can be found in $PATH_MC.persist.bak"
